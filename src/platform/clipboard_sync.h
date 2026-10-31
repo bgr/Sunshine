@@ -108,6 +108,15 @@ namespace platf {
       return delivered;
     }
 
+    /**
+     * @brief Check whether any client is subscribed.
+     *
+     * @return True when no client is subscribed.
+     */
+    bool empty() const {
+      return entries_.empty();
+    }
+
   private:
     /**
      * @brief Send text unless this subscriber already has that snapshot.
